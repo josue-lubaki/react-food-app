@@ -19,7 +19,7 @@ const Cart = (props) => {
 		<ul className={classes['cart-items']}>
 			{cartCtx.items.map((item) => (
 				<CartItem
-					key={item.id}
+					key={item.id + '-' + Math.random()}
 					name={item.name}
 					amount={item.amount}
 					price={item.price}
