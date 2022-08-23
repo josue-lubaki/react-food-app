@@ -31,7 +31,7 @@ const Cart = (props) => {
 
 	const submitOrderHandler = (userData) => {
 		setIsSubmitting(true);
-		const transformData = (orderData) => {
+		const transformData = () => {
 			const order = {
 				user: userData,
 				orderedItems: cartCtx.items,
